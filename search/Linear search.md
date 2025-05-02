@@ -4,10 +4,10 @@ tags : #search
 
 Linear search is searching algorithm used to find given element in a collection of elements.
 
-#### Syntax : 
+#### Implementation : 
 
 ```
-private int linearSearch(int[] values, int key) {
+public int linearSearch(int[] values, int key) {
 	for(int i = 0; i< values.length; i++) {
 		if(values[i] == key) {
 			return i;

@@ -4,7 +4,7 @@ tags : #search
 
 Binary search is effective way of searching element in given collection of element. To implement binary search, **collection should be sorted in ascending manner**. Binary search uses divide and conquer approach to search the element in collection.
 
-#### Syntax : 
+#### Implementation : 
 
 ```
 public int binarySearch(int[] nums, int key) {
