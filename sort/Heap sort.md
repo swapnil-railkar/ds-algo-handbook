@@ -68,7 +68,7 @@ Heap sort algorithm starts by using *buildMaxHeap* to build max heap on input ar
 ```
 public void heapSort(int[] values) {
 	buildMaxHeap(values, values.length - 1);
-	for(int i = end; i> 0; i++) {
+	for(int i = values.length - 1; i> 0; i++) {
 		int temp = values[0];
 		values[0] = values[i];
 		values[i] = temp;

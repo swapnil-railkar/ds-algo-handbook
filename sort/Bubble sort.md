@@ -9,7 +9,7 @@ Bubble sort is a popular but inefficient way of sorting collection of elements i
 ```
 public void bubbleSort(int[] values) {
 	for(int i = 0; i< values.length; i++) {
-		for(int j = values.length - 2; j>= i; j--) {
+		for(int j = values.length - 1; j>= i; j--) {
 			if(values[j] < values[j - 1]) {
 				int temp = values[j];
 				values[j] = values[j - 1];
