@@ -2,7 +2,7 @@ tags : #stack
 
 #### Introduction : 
 
-Stack implements **Last In First Out** policy that is, in stack, the element deleted which is deleted is the one most recently inserted.
+Stack implements **Last In First Out** policy that is, in stack, the element which is deleted is the one most recently inserted.
 
 #### Implementation : 
 
