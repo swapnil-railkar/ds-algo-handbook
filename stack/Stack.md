@@ -54,7 +54,7 @@ An element is added to top stack. This operation is called as **push** operation
 ```
 public void push(int data) {
 	Node node = new Node(data);
-	node.next = head;
+	node.setNext(head);
 	node = head;
 }
 ```
@@ -66,7 +66,7 @@ public int peek() {
 	if(head == null) {
 		throw new Exception("Underflow exception");
 	}
-	return head.data;
+	return head.getData();
 }
 ```
 
@@ -78,8 +78,8 @@ public int pop() {
 		throw new Exception("Underflow exception");
 	}
 	
-	int data = head.data;
-	head = head.next;
+	int data = head.getData();
+	head = head.getNext();
 	return data;
 }
 ```
