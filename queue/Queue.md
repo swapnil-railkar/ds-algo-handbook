@@ -6,7 +6,7 @@ Queue implements **First In First Out** policy. That is, the element which is de
 
 #### Implementation : 
 
-In this implementation, stack is implemented using singly linked list. Each node in stack contains data and pointer to next element in stack.
+In this implementation, queue is implemented using singly linked list. Each node in stack contains data and pointer to next element in stack.
 
 ```
 Class Node {
