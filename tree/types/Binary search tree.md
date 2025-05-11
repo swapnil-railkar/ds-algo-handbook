@@ -150,7 +150,7 @@ private void deleteNode(Node node) {
 		Node min = minimum(node.right);
 		if(min.parent != node) {
 			tranplant(min, min.right);
-			min.right = z.right;
+			min.right = node.right;
 			min.right.parent = min;
 		}
 		transplant(node, min);

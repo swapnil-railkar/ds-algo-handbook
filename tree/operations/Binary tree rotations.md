@@ -15,7 +15,7 @@ Binary tree rotations are used in self balancing binary search trees like AVL tr
 	- The left child becomes the new root of the subtree and original root becomes right child of new root.
 	
 ```
-public void rightRotate(Node pivot) {
+public Node rightRotate(Node pivot) {
 	Node newRoot = pivot.left; // left child of pivot is new root.
 	Node temp = leftNode.right;
 	
@@ -36,6 +36,7 @@ public void rightRotate(Node pivot) {
 		pivot.parent.right = newRoot;
 	}
 	pivot.parent = newRoot;
+	return newRoot;
 }
 ```
 
@@ -44,7 +45,7 @@ public void rightRotate(Node pivot) {
 	- The right child of root becomes new root and original root becomes left child of new root.
 
 ```
-public void rightRotate(Node pivot) {
+public Node rightRotate(Node pivot) {
 	Node newRoot = pivot.right;
 	Node temp = newRoot.left;
 	
@@ -63,6 +64,7 @@ public void rightRotate(Node pivot) {
 		pivot.parent.rigth = newRoot;
 	}
 	pivot.parent = newRoot;
+	return newRoot;
 }
 ```
 
